@@ -1,0 +1,28 @@
+.caixasup {
+  background-color: #24292e; /* Cinza escuro elegante (estilo GitHub) */
+  color: #f6f8fa;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 16px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.caixasup h1 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.caixasup a {
+  color: #58a6ff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.caixasup a:hover {
+  text-decoration: underline;
+}

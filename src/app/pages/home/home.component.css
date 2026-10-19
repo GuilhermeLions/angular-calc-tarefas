@@ -1,0 +1,36 @@
+.card-links {
+  width: 220px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #24292e;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.btn-link {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid #444c56;
+  border-radius: 8px;
+  background-color: #30363d;
+  color: #f6f8fa;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-link:hover {
+  background-color: #3c444d;
+  border-color: #58a6ff;
+  color: #58a6ff;
+}
+
+.btn-link:active {
+  background-color: #21262d;
+}

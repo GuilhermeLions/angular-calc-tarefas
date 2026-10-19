@@ -1,0 +1,102 @@
+.card-tarefas {
+  width: 320px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #24292e;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+.card-tarefas h2 {
+  margin: 0 0 16px 0;
+  font-size: 1.2rem;
+  color: #f6f8fa;
+  font-weight: 500;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid #444c56;
+  border-radius: 8px;
+  background-color: #1c2128;
+  color: #f6f8fa;
+  font-size: 0.9rem;
+  outline: none;
+}
+form input:focus {
+  border-color: #58a6ff;
+}
+form button {
+  padding: 8px 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #444c56;
+  border-radius: 8px;
+  background-color: #30363d;
+  color: #f6f8fa;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+form button:hover {
+  background-color: #3c444d;
+  border-color: #58a6ff;
+  color: #58a6ff;
+}
+.lista-tarefas {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid #30363d;
+  padding-top: 16px;
+}
+
+.item-tarefa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #1c2128;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  color: #f6f8fa;
+}
+.item-tarefa .icone {
+  font-size: 1.1rem;
+}
+.item-tarefa .info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+.item-tarefa strong {
+  font-size: 0.95rem;
+  color: #f6f8fa;
+}
+.item-tarefa small {
+  color: #8b949e;
+  font-size: 0.8rem;
+}
+
+.item-tarefa.concluido {
+  opacity: 0.6;
+}
+.item-tarefa.concluido strong {
+  text-decoration: line-through;
+}
+.vazio {
+  color: #8b949e;
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 8px 0;
+}

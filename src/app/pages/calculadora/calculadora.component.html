@@ -1,0 +1,18 @@
+<app-cabececalho titulo="Calculadora">
+</app-cabececalho>
+
+<main>
+  <div class="card-calc">
+    <input type="number" placeholder="Número 1" [(ngModel)]="numero1" />
+    <input type="number" placeholder="Número 2" [(ngModel)]="numero2" />
+
+    <div class="botoes">
+      <button (click)="somar()">+</button>
+      <button (click)="subtrair()">-</button>
+      <button (click)="multiplicar()">*</button>
+      <button (click)="dividir()">/</button>
+    </div>
+
+    <h3>Resultado: <span>{{ resultado }}</span></h3>
+  </div>
+</main>

@@ -1,0 +1,28 @@
+<app-cabececalho titulo="Tarefas"></app-cabececalho>
+
+<main>
+  <div class="card-tarefas">
+    <h2>Minhas Tarefas</h2>
+
+    <form (ngSubmit)="adicionarTarefas()">
+      <input type="text" name="titulo" [(ngModel)]="novoTitulo" placeholder="Título" required>
+      <input type="text" name="desc" [(ngModel)]="novadesc" placeholder="Descrição">
+      <input type="text" name="prazo" [(ngModel)]="novadata" placeholder="Prazo">
+      <button type="submit">+ Adicionar</button>
+    </form>
+
+    <div class="lista-tarefas">
+      @for (item of minhasTarefas; track item.id) {
+        <div class="item-tarefa" [class.concluido]="item.concluido">
+          <span class="icone">{{ item.concluido ? "✅" : "⌛" }}</span>
+          <div class="info">
+            <strong>{{ item.titulo }}</strong>
+            <small>{{ item.desc }} — <em>{{ item.prazo }}</em></small>
+          </div>
+        </div>
+      } @empty {
+        <p class="vazio">Nenhuma tarefa cadastrada.</p>
+      }
+    </div>
+  </div>
+</main>
